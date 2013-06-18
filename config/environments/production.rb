@@ -73,6 +73,7 @@ Omrails::Application.configure do
     :storage => :s3,
     :s3_credentials => {
       :bucket => ENV['AWS_BUCKET'],
+      :s3_host_name => 's3-us-west-2.amazonaws.com',
       :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
       :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
   }
